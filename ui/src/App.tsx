@@ -1,4 +1,4 @@
-import { useMutation, useQuery } from '@tanstack/react-query';
+import { useMutation } from '@tanstack/react-query';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import {
@@ -9,7 +9,7 @@ import {
     CardFooter,
     CardTitle,
 } from '@/components/ui/card';
-import { createUser, fetchUser } from '@/services/api/fetchers/users';
+import { createUser } from '@/services/api/fetchers/users';
 import { User } from '@/lib/models/user';
 
 interface State {
