@@ -8,6 +8,7 @@ module.exports = {
         'airbnb-typescript',
         'plugin:@typescript-eslint/recommended',
         'plugin:react/jsx-runtime',
+        'plugin:@tanstack/eslint-plugin-query/recommended',
         'prettier',
     ],
     parser: '@typescript-eslint/parser',
@@ -16,7 +17,7 @@ module.exports = {
         sourceType: 'module',
         project: '**/tsconfig.json',
     },
-    plugins: ['react-refresh', '@typescript-eslint'],
+    plugins: ['react-refresh', '@typescript-eslint', '@tanstack/query'],
     ignorePatterns: ['node_modules/', 'dist/', 'build/', '.eslintrc.cjs'],
     rules: {
         'react-refresh/only-export-components': [
